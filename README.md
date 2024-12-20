@@ -22,18 +22,16 @@ First, install conda using Miniforge. You can follow these steps:
 
 You can create a new conda environment using the `env.yml` file present in the root directory of this repo.
 ```SHELL
-conda env create -f env.yml
+$ conda env create -f env.yml
 ```
 The environment will be named as `mle-dev`.
 
-
 Activate the environment
-``` SHELL
-conda activate mle-dev
+```SHELL
+$ conda activate mle-dev
 ```
 
 Run the python file using the following command
-``` SHELL
-python3 nonstandardcode.py
+```SHELL
+$ python3 nonstandardcode.py
 ```
-
