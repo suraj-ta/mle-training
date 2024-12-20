@@ -1,0 +1,8 @@
+# Ignore Datasets
+datasets/
+
+# Ignore .csv files.
+.csv
+
+# Ignore .pyc files.
+.pyc
