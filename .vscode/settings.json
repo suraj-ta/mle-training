@@ -1,0 +1,30 @@
+{
+  "[python]":{
+     "editor.defaultFormatter":"ms-python.black-formatter",
+     "editor.formatOnSave":true,
+     "editor.codeActionsOnSave":{
+        "source.organizeImports":"explicit"
+     },
+     "editor.tabSize":4
+  },
+  "black-formatter.args":[
+     "--line-length",
+     "88",
+     "--target-version",
+     "py310"
+  ],
+  "isort.args":[
+     "--profile",
+     "black",
+     "--line-length",
+     "88",
+     "--py",
+     "310"
+  ],
+  "files.trimTrailingWhitespace":true,
+  "flake8.enabled":true,
+  "flake8.args":[
+     "--max-line-length",
+     "88"
+  ]
+}
