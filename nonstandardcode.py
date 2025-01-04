@@ -131,7 +131,6 @@ tree_mse = mean_squared_error(housing_labels, housing_predictions)
 tree_rmse = np.sqrt(tree_mse)
 tree_rmse
 
-
 param_distribs = {
     "n_estimators": randint(low=1, high=200),
     "max_features": randint(low=1, high=8),
