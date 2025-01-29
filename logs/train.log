@@ -1,0 +1,28 @@
+2025-01-29 17:04:41,117 - INFO - Loading the training dataset from data/processed/train.csv
+2025-01-29 17:04:41,148 - INFO - Loading the validation dataset from data/processed/val.csv
+2025-01-29 17:04:41,161 - INFO - Preparing the training dataset.
+2025-01-29 17:04:41,161 - INFO - Preprocessing data
+2025-01-29 17:04:41,209 - INFO - Training a Random Forest model.
+2025-01-29 17:04:55,320 - INFO - Model training completed.
+2025-01-29 17:04:55,320 - INFO - Evaluating the model on validation dataset.
+2025-01-29 17:04:55,321 - INFO - Preprocessing data
+2025-01-29 17:07:14,333 - INFO - Loading the training dataset from data/processed/train.csv
+2025-01-29 17:07:14,353 - INFO - Loading the validation dataset from data/processed/val.csv
+2025-01-29 17:07:14,358 - INFO - Preparing the training dataset.
+2025-01-29 17:07:14,358 - INFO - Preprocessing data
+2025-01-29 17:07:14,389 - INFO - Training a Random Forest model.
+2025-01-29 17:07:30,707 - INFO - Model training completed.
+2025-01-29 17:07:30,707 - INFO - Evaluating the model on validation dataset.
+2025-01-29 17:07:30,707 - INFO - Preprocessing data
+2025-01-29 17:07:53,803 - INFO - Loading the training dataset from data/processed/train.csv
+2025-01-29 17:07:53,827 - INFO - Loading the validation dataset from data/processed/val.csv
+2025-01-29 17:07:53,834 - INFO - Preparing the training dataset.
+2025-01-29 17:07:53,834 - INFO - Preprocessing data
+2025-01-29 17:07:53,863 - INFO - Training a Random Forest model.
+2025-01-29 17:08:06,742 - INFO - Model training completed.
+2025-01-29 17:08:06,743 - INFO - Evaluating the model on validation dataset.
+2025-01-29 17:08:06,743 - INFO - Preprocessing data
+2025-01-29 17:08:06,863 - INFO - Root Mean Square Error for Validation Dataset: 50396.6263
+2025-01-29 17:08:06,864 - INFO - Saving the model to model/random_forest_model.pkl
+2025-01-29 17:08:07,379 - INFO - Model saved to model/random_forest_model.pkl.
+2025-01-29 17:08:07,379 - INFO - Training process completed successfully.
