@@ -12,3 +12,6 @@ nonstandardcode.egg-info/
 
 # Ignore pycache files generated during testing.
 __pycache__
+
+# model pickle files.
+*.pkl
