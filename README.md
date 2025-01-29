@@ -1,37 +1,34 @@
 ## Description
 Median housing value prediction
 
-The housing data can be downloaded from <https://github.com/ageron/handson-ml/tree/master/datasets>. 
-The script has codes to download the data. We have modelled the median house value on given housing data. 
+The housing data can be downloaded from <https://github.com/ageron/handson-ml/tree/master/datasets>.
+The script has codes to download the data. We have modelled the median house value on given housing data.
 
-The following techniques have been used: 
-
- - Linear regression
- - Decision Tree
- - Random Forest
-
-## Steps performed
- - We prepare and clean the data. We check and impute for missing values.
- - Features are generated and the variables are checked for correlation.
- - Multiple sampling techinuqies are evaluated. The data set is split into train and test.
- - All the above said modelling techniques are tried and evaluated. The final metric used to evaluate is mean squared error.
-
-## To excute the script
-First, install conda using Miniforge. You can follow these steps:
-<https://github.com/conda-forge/miniforge?tab=readme-ov-file#install>
-
-You can create a new conda environment using the `env.yml` file present in the root directory of this repo.
-```SHELL
-$ conda env create -f env.yml
+# Installation
+```bash
+pip install -e .
 ```
-The environment will be named as `mle-dev`.
+# Process
 
-Activate the environment
-```SHELL
-$ conda activate mle-dev
+**Step-1:** Ingesting and pre-processing the housing dataset.
+
+``` bash
+python src/python_files/ingest_data.py --output-dir data/processed --log-level INFO --log-path logs/ingest_data.log
 ```
 
-Run the python file using the following command
-```SHELL
-$ python3 nonstandardcode.py
+**step-2:** Train the model.
+```bash
+python src/python_files/train.py --train-path data/processed/train.csv --log-path logs/train.log
+```
+
+**step-3:** Evaluate and check the score of the model.
+```bash
+python src/python_files/score.py --model-path model/random_forest_model.pkl --test-path data/processed/val.csv --log-path logs/score.log
+```
+
+# Testing
+Tests are written for various steps of the process. You can check if all the tests are running successfully using this command
+
+```bash
+pytest -v tests/
 ```
