@@ -9,7 +9,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("../src/nonstandardcode/"))
+sys.path.insert(0, os.path.abspath("../../src/nonstandardcode/"))
 
 
 project = "nonstandardcode"
