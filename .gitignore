@@ -12,3 +12,6 @@ nonstandardcode.egg-info/
 
 # Ignore pycache files generated during testing.
 __pycache__
+
+# Ignore .ipynb_checkpoints folders
+.ipynb_checkpoints/

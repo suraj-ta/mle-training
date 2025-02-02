@@ -1,0 +1,8 @@
+2025-01-29 17:01:00,137 - INFO - Starting the data ingestion process.
+2025-01-29 17:01:00,621 - INFO - Starting download of housing data from https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz...
+2025-01-29 17:01:00,621 - INFO - Downloading and Extracting the housing data...
+2025-01-29 17:01:00,646 - INFO - Successfully extracted the Housing data to data/raw/.
+2025-01-29 17:01:00,646 - INFO - Reading the housing dataset from data/raw/housing.csv
+2025-01-29 17:01:00,687 - INFO - Splitting the dataset into training and validation sets
+2025-01-29 17:01:00,855 - INFO - Training and Validation datasets saved to directory: data/processed.
+2025-01-29 17:01:00,855 - INFO - Data ingestion and processing completed successfully.

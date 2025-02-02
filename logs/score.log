@@ -1,0 +1,5 @@
+2025-01-29 17:10:39,032 - INFO - Loading the test dataset from data/processed/val.csv.
+2025-01-29 17:10:39,039 - INFO - Preprocessing the test dataset
+2025-01-29 17:10:39,075 - INFO - Loading the trained model from model/random_forest_model.pkl.
+2025-01-29 17:10:39,660 - INFO - Making the predictions.
+2025-01-29 17:10:39,801 - INFO - Test RMSE: 50396.6263
