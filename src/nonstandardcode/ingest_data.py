@@ -4,6 +4,7 @@ import os
 import tarfile
 import urllib.request
 
+import mlflow
 import pandas as pd
 from six.moves import urllib
 
@@ -140,6 +141,8 @@ def main():
     logging_setup(args.log_level, args.log_path, console_log)
 
     logging.info("Starting the data ingestion process.")
+    mlflow.log_artifact("data/processed")
+    mlflow.log_artifact("data/raw")
     fetch_housing_data(args.housing_url, args.housing_path)
     split_data(args.housing_path, args.output_dir)
     logging.info("Data ingestion and processing completed successfully.")

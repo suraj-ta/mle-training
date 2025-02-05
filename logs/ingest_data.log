@@ -6,3 +6,103 @@
 2025-01-29 17:01:00,687 - INFO - Splitting the dataset into training and validation sets
 2025-01-29 17:01:00,855 - INFO - Training and Validation datasets saved to directory: data/processed.
 2025-01-29 17:01:00,855 - INFO - Data ingestion and processing completed successfully.
+2025-02-05 10:14:18,991 - INFO - Starting the data ingestion process.
+2025-02-05 10:14:20,152 - INFO - Starting download of housing data from https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz...
+2025-02-05 10:14:20,152 - INFO - Downloading and Extracting the housing data...
+2025-02-05 10:14:20,167 - INFO - Successfully extracted the Housing data to data/raw/.
+2025-02-05 10:14:20,168 - INFO - Reading the housing dataset from data/raw/housing.csv
+2025-02-05 10:14:20,195 - INFO - Splitting the dataset into training and validation sets
+2025-02-05 10:14:20,296 - INFO - Training and Validation datasets saved to directory: data/processed.
+2025-02-05 10:14:20,297 - INFO - Data ingestion and processing completed successfully.
+2025-02-05 10:14:20,334 - INFO - Loading the training dataset from data/processed/train.csv
+2025-02-05 10:14:20,346 - INFO - Loading the validation dataset from data/processed/val.csv
+2025-02-05 10:14:20,352 - INFO - Preparing the training dataset.
+2025-02-05 10:14:20,352 - INFO - Preprocessing data
+2025-02-05 10:14:20,387 - INFO - Training a Random Forest model.
+2025-02-05 10:14:30,835 - INFO - Model training completed.
+2025-02-05 10:14:30,836 - INFO - Evaluating the model on validation dataset.
+2025-02-05 10:14:30,836 - INFO - Preprocessing data
+2025-02-05 10:14:30,931 - INFO - Root Mean Square Error for Validation Dataset: 50396.6263
+2025-02-05 10:14:30,931 - INFO - Saving the model to model/random_forest_model.pkl
+2025-02-05 10:14:31,154 - INFO - Model saved to model/random_forest_model.pkl.
+2025-02-05 10:14:31,154 - INFO - Training process completed successfully.
+2025-02-05 10:14:31,345 - INFO - Loading the test dataset from data/processed/val.csv.
+2025-02-05 10:14:31,348 - INFO - Preprocessing the test dataset
+2025-02-05 10:14:31,354 - INFO - Loading the trained model from model/random_forest_model.pkl.
+2025-02-05 10:14:31,656 - INFO - Making the predictions.
+2025-02-05 10:14:31,788 - INFO - Test RMSE: 50396.6263
+2025-02-05 10:17:21,164 - INFO - Starting the data ingestion process.
+2025-02-05 10:17:22,477 - INFO - Starting download of housing data from https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz...
+2025-02-05 10:17:22,478 - INFO - Downloading and Extracting the housing data...
+2025-02-05 10:17:22,487 - INFO - Successfully extracted the Housing data to data/raw/.
+2025-02-05 10:17:22,487 - INFO - Reading the housing dataset from data/raw/housing.csv
+2025-02-05 10:17:22,511 - INFO - Splitting the dataset into training and validation sets
+2025-02-05 10:17:22,599 - INFO - Training and Validation datasets saved to directory: data/processed.
+2025-02-05 10:17:22,599 - INFO - Data ingestion and processing completed successfully.
+2025-02-05 10:17:22,629 - INFO - Loading the training dataset from data/processed/train.csv
+2025-02-05 10:17:22,639 - INFO - Loading the validation dataset from data/processed/val.csv
+2025-02-05 10:17:22,644 - INFO - Preparing the training dataset.
+2025-02-05 10:17:22,644 - INFO - Preprocessing data
+2025-02-05 10:17:22,667 - INFO - Training a Random Forest model.
+2025-02-05 10:17:32,861 - INFO - Model training completed.
+2025-02-05 10:17:32,861 - INFO - Evaluating the model on validation dataset.
+2025-02-05 10:17:32,861 - INFO - Preprocessing data
+2025-02-05 10:17:32,964 - INFO - Root Mean Square Error for Validation Dataset: 50396.6263
+2025-02-05 10:17:32,964 - INFO - Saving the model to model/random_forest_model.pkl
+2025-02-05 10:17:33,175 - INFO - Model saved to model/random_forest_model.pkl.
+2025-02-05 10:17:33,175 - INFO - Training process completed successfully.
+2025-02-05 10:17:33,333 - INFO - Loading the test dataset from data/processed/val.csv.
+2025-02-05 10:17:33,336 - INFO - Preprocessing the test dataset
+2025-02-05 10:17:33,341 - INFO - Loading the trained model from model/random_forest_model.pkl.
+2025-02-05 10:17:33,609 - INFO - Making the predictions.
+2025-02-05 10:17:33,764 - INFO - Test RMSE: 50396.6263
+2025-02-05 11:15:36,933 - INFO - Starting the data ingestion process.
+2025-02-05 11:15:38,176 - INFO - Starting download of housing data from https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz...
+2025-02-05 11:15:38,176 - INFO - Downloading and Extracting the housing data...
+2025-02-05 11:15:38,192 - INFO - Successfully extracted the Housing data to data/raw/.
+2025-02-05 11:15:38,193 - INFO - Reading the housing dataset from data/raw/housing.csv
+2025-02-05 11:15:38,232 - INFO - Splitting the dataset into training and validation sets
+2025-02-05 11:15:38,346 - INFO - Training and Validation datasets saved to directory: data/processed.
+2025-02-05 11:15:38,346 - INFO - Data ingestion and processing completed successfully.
+2025-02-05 11:15:38,385 - INFO - Loading the training dataset from data/processed/train.csv
+2025-02-05 11:15:38,398 - INFO - Loading the validation dataset from data/processed/val.csv
+2025-02-05 11:15:38,403 - INFO - Preparing the training dataset.
+2025-02-05 11:15:38,404 - INFO - Preprocessing data
+2025-02-05 11:15:38,448 - INFO - Training a Random Forest model.
+2025-02-05 11:15:49,370 - INFO - Model training completed.
+2025-02-05 11:15:49,370 - INFO - Evaluating the model on validation dataset.
+2025-02-05 11:15:49,370 - INFO - Preprocessing data
+2025-02-05 11:15:49,473 - INFO - Root Mean Square Error for Validation Dataset: 50396.6263
+2025-02-05 11:15:49,473 - INFO - Saving the model to model/random_forest_model.pkl
+2025-02-05 11:15:49,757 - INFO - Model saved to model/random_forest_model.pkl.
+2025-02-05 11:15:49,757 - INFO - Training process completed successfully.
+2025-02-05 11:15:49,939 - INFO - Loading the test dataset from data/processed/val.csv.
+2025-02-05 11:15:49,943 - INFO - Preprocessing the test dataset
+2025-02-05 11:15:49,947 - INFO - Loading the trained model from model/random_forest_model.pkl.
+2025-02-05 11:15:50,478 - INFO - Making the predictions.
+2025-02-05 11:15:50,575 - INFO - Test RMSE: 50396.6263
+2025-02-05 11:17:32,936 - INFO - Starting the data ingestion process.
+2025-02-05 11:17:33,626 - INFO - Starting download of housing data from https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz...
+2025-02-05 11:17:33,627 - INFO - Downloading and Extracting the housing data...
+2025-02-05 11:17:33,636 - INFO - Successfully extracted the Housing data to data/raw/.
+2025-02-05 11:17:33,636 - INFO - Reading the housing dataset from data/raw/housing.csv
+2025-02-05 11:17:33,654 - INFO - Splitting the dataset into training and validation sets
+2025-02-05 11:17:33,742 - INFO - Training and Validation datasets saved to directory: data/processed.
+2025-02-05 11:17:33,742 - INFO - Data ingestion and processing completed successfully.
+2025-02-05 11:17:33,772 - INFO - Loading the training dataset from data/processed/train.csv
+2025-02-05 11:17:33,782 - INFO - Loading the validation dataset from data/processed/val.csv
+2025-02-05 11:17:33,788 - INFO - Preparing the training dataset.
+2025-02-05 11:17:33,788 - INFO - Preprocessing data
+2025-02-05 11:17:33,807 - INFO - Training a Random Forest model.
+2025-02-05 11:17:45,909 - INFO - Model training completed.
+2025-02-05 11:17:45,910 - INFO - Evaluating the model on validation dataset.
+2025-02-05 11:17:45,910 - INFO - Preprocessing data
+2025-02-05 11:17:46,021 - INFO - Root Mean Square Error for Validation Dataset: 50396.6263
+2025-02-05 11:17:46,022 - INFO - Saving the model to model/random_forest_model.pkl
+2025-02-05 11:17:46,185 - INFO - Model saved to model/random_forest_model.pkl.
+2025-02-05 11:17:46,185 - INFO - Training process completed successfully.
+2025-02-05 11:17:46,370 - INFO - Loading the test dataset from data/processed/val.csv.
+2025-02-05 11:17:46,373 - INFO - Preprocessing the test dataset
+2025-02-05 11:17:46,377 - INFO - Loading the trained model from model/random_forest_model.pkl.
+2025-02-05 11:17:46,636 - INFO - Making the predictions.
+2025-02-05 11:17:46,776 - INFO - Test RMSE: 50396.6263
