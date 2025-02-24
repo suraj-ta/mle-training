@@ -15,3 +15,6 @@ __pycache__
 
 # Ignore .ipynb_checkpoints folders
 .ipynb_checkpoints/
+
+# Ignore MLFlow artifacts.
+mlruns/
