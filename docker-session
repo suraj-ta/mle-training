@@ -1,0 +1,278 @@
+Script started on 2025-02-25 05:59:18+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="28"]
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m 
+[1;32m❯[0m [K[?1h=[?2004h# Add Docker's official GPG key:
+sudo apt-get update[K
+sudo apt-get install ca-certificates curl[K
+sudo install -m 0755 -d /etc/apt/keyrings[K
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc[K
+sudo chmod a+r /etc/apt/keyrings/docker.asc[K
+[K
+# Add the repository to Apt sources:[K
+echo \[K
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \[K
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \[K
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null[K
+sudo apt-get update[K[13A[17D[1m[31m#[0m[39m[11C[33m'[33ms[33m [33mo[33mf[33mf[33mi[33mc[33mi[33ma[33ml[33m [33mG[33mP[33mG[33m [33mk[33me[33my[33m:[1B[39m[33ms[33mu[33md[33mo[33m [33ma[33mp[33mt[33m-[33mg[33me[33mt[33m [33mu[33mp[33md[33ma[33mt[33me[1B[39m[33ms[33mu[33md[33mo[33m [33ma[33mp[33mt[33m-[33mg[33me[33mt[33m [33mi[33mn[33ms[33mt[33ma[33ml[33ml[33m [33mc[33ma[33m-[33mc[33me[33mr[33mt[33mi[33mf[33mi[33mc[33ma[33mt[33me[33ms[33m [33mc[33mu[33mr[33ml[1B[39m[33ms[33mu[33md[33mo[33m [33mi[33mn[33ms[33mt[33ma[33ml[33ml[33m [33m-[33mm[33m [33m0[33m7[33m5[33m5[33m [33m-[33md[33m [33m/[33me[33mt[33mc[33m/[33ma[33mp[33mt[33m/[33mk[33me[33my[33mr[33mi[33mn[33mg[33ms[1B[39m[33ms[33mu[33md[33mo[33m [33mc[33mu[33mr[33ml[33m [33m-[33mf[33ms[33mS[33mL[33m [33mh[33mt[33mt[33mp[33ms[33m:[33m/[33m/[33md[33mo[33mw[33mn[33ml[33mo[33ma[33md[33m.[33md[33mo[33mc[33mk[33me[33mr[33m.[33mc[33mo[33mm[33m/[33ml[33mi[33mn[33mu[33mx[33m/[33mu[33mb[33mu[33mn[33mt[33mu[33m/[33mg[33mp[33mg[33m [33m-[33mo[33m [33m/[33me[33mt[33mc[33m/[33ma[33mp[33mt[33m/[33mk[33me[33my[33mr[33mi[33mn[33mg[33ms[33m/[33md[33mo[33mc[33mk[33me[33mr[33m.[33ma[33ms[33mc[1B[39m[33ms[33mu[33md[33mo[33m [33mc[33mh[33mm[33mo[33md[33m [33ma[33m+[33mr[33m [33m/[33me[33mt[33mc[33m/[33ma[33mp[33mt[33m/[33mk[33me[33my[33mr[33mi[33mn[33mg[33ms[33m/[33md[33mo[33mc[33mk[33me[33mr[33m.[33ma[33ms[33mc[2B[39m[33m#[33m [33mA[33md[33md[33m [33mt[33mh[33me[33m [33mr[33me[33mp[33mo[33ms[33mi[33mt[33mo[33mr[33my[33m [33mt[33mo[33m [33mA[33mp[33mt[33m [33ms[33mo[33mu[33mr[33mc[33me[33ms[33m:[1B[39m[33me[33mc[33mh[33mo[33m [33m\[1B[39m[33m [33m [33m"[33md[33me[33mb[33m [33m[[33ma[33mr[33mc[33mh[33m=[33m$[33m([33md[33mp[33mk[33mg[33m [33m-[33m-[33mp[33mr[33mi[33mn[33mt[33m-[33ma[33mr[33mc[33mh[33mi[33mt[33me[33mc[33mt[33mu[33mr[33me[33m)[33m [33ms[33mi[33mg[33mn[33me[33md[33m-[33mb[33my[33m=[33m/[33me[33mt[33mc[33m/[33ma[33mp[33mt[33m/[33mk[33me[33my[33mr[33mi[33mn[33mg[33ms[33m/[33md[33mo[33mc[33mk[33me[33mr[33m.[33ma[33ms[33mc[33m][33m [33mh[33mt[33mt[33mp[33ms[33m:[33m/[33m/[33md[33mo[33mw[33mn[33ml[33mo[33ma[33md[33m.[33md[33mo[33mc[33mk[33me[33mr[33m.[33mc[33mo[33mm[33m/[33ml[33mi[33mn[33mu[33mx[33m/[33mu[33mb[33mu[33mn[33mt[33mu[33m [33m\[1B[39m[33m [33m [33m$[33m([33m.[33m [33m/[33me[33mt[33mc[33m/[33mo[33ms[33m-[33mr[33me[33ml[33me[33ma[33ms[33me[33m [33m&[33m&[33m [33me[33mc[33mh[33mo[33m [33m"[33m$[33m{[33mU[33mB[33mU[33mN[33mT[33mU[33m_[33mC[33mO[33mD[33mE[33mN[33mA[33mM[33mE[33m:[33m-[33m$[33mV[33mE[33mR[33mS[33mI[33mO[33mN[33m_[33mC[33mO[33mD[33mE[33mN[33mA[33mM[33mE[33m}[33m"[33m)[33m [33ms[33mt[33ma[33mb[33ml[33me[33m"[33m [33m|[33m [33m\[1B[39m[33m [33m [33ms[33mu[33md[33mo[33m [33mt[33me[33me[33m [33m/[33me[33mt[33mc[33m/[33ma[33mp[33mt[33m/[33ms[33mo[33mu[33mr[33mc[33me[33ms[33m.[33ml[33mi[33ms[33mt[33m.[33md[33m/[33md[33mo[33mc[33mk[33me[33mr[33m.[33ml[33mi[33ms[33mt[33m [33m>[33m [33m/[33md[33me[33mv[33m/[33mn[33mu[33ml[33ml[1B[39m[33ms[33mu[33md[33mo[33m [33ma[33mp[33mt[33m-[33mg[33me[33mt[33m [33mu[33mp[33md[33ma[33mt[33me[39m[?1l>[?2004l
+[0m[27m[24m[J[90m∙[0m [K[?1h=[?2004h[?25l[?12l[?25h[0m[27m[24m[J[90m∙[0m [K[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m 
+[1;32m❯[0m [K[?1h=[?2004hr[32mr[39m[32mr[39m[90mm -rf docker-session[39m[20D[32mr[32mm[39m[32mr[32mm[32m [39m[32mr[32mm[39m[39m [39m-[39mr [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[90mrf docker-session[39m[17D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18D[90m-rf docker-session[39m[18D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[90m -rf docker-session[39m[19D[32mr[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [20D[32mr[39m[90mm -rf docker-session[39m[20D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [21Dsudo apt-get update
+sudo apt-get install ca-certificates curl[K
+sudo install -m 0755 -d /etc/apt/keyrings[K
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc[K
+sudo chmod a+r /etc/apt/keyrings/docker.asc[K[4A[41D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32ma[32mp[32mt[32m-[32mg[32me[32mt[39m[1B[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32ma[32mp[32mt[32m-[32mg[32me[32mt[39m[1B[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32mi[32mn[32ms[32mt[32ma[32ml[32ml[39m[12C[4m/[4me[4mt[4mc[4m/[4ma[4mp[4mt[4m/[4mk[4me[4my[4mr[4mi[4mn[4mg[4ms[24m[1B[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32mc[32mu[32mr[32ml[39m[1B[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32mc[32mh[32mm[32mo[32md[39m[33C[?1l>[?2004l
+[sudo] password for suraj: 
+0% [Working]            Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+0% [Connecting to deb.gierens.de] [Waiting for headers]                                                       Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+                                                       0% [Connecting to deb.gierens.de]0% [Connecting to deb.gierens.de] [Waiting for headers]0% [Connecting to deb.gierens.de] [Waiting for headers]                                                       Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+0% [Connecting to deb.gierens.de] [3 InRelease 1,140 B/126 kB 1%]                                                                 0% [Waiting for headers]                        Hit:4 http://deb.gierens.de stable InRelease
+0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]                        Hit:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+                        0% [Working]100% [Working]              Fetched 126 kB in 1s (101 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 4%Reading package lists... 4%Reading package lists... 6%Reading package lists... 6%Reading package lists... 52%Reading package lists... 52%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 73%Reading package lists... 73%Reading package lists... 74%Reading package lists... 74%Reading package lists... 76%Reading package lists... 76%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 88%Reading package lists... 88%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+ca-certificates is already the newest version (20240203).
+ca-certificates set to manually installed.
+curl is already the newest version (8.5.0-2ubuntu10.6).
+curl set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 67 not upgraded.
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m took [1;33m7s[0m 
+[1;32m❯[0m [K[?1h=[?2004hecho \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \[K
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \[K
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null[K
+sudo apt-get update[K[5A[17D[32me[32mc[32mh[32mo[39m[1B[33m"[33md[33me[33mb[33m [33m[[33ma[33mr[33mc[33mh[33m=[39m[35m$[35m([39m[32md[32mp[32mk[32mg[39m[21C[35m)[39m[33m [33ms[33mi[33mg[33mn[33me[33md[33m-[33mb[33my[33m=[33m/[33me[33mt[33mc[33m/[33ma[33mp[33mt[33m/[33mk[33me[33my[33mr[33mi[33mn[33mg[33ms[33m/[33md[33mo[33mc[33mk[33me[33mr[33m.[33ma[33ms[33mc[33m][33m [33mh[33mt[33mt[33mp[33ms[33m:[33m/[33m/[33md[33mo[33mw[33mn[33ml[33mo[33ma[33md[33m.[33md[33mo[33mc[33mk[33me[33mr[33m.[33mc[33mo[33mm[33m/[33ml[33mi[33mn[33mu[33mx[33m/[33mu[33mb[33mu[33mn[33mt[33mu[33m [33m\[1B[39m[35m [35m [39m[32m$[39m([4m.[4m [4m/[4me[4mt[4mc[4m/[4mo[4ms[4m-[4mr[4me[4ml[4me[4ma[24m[4C[32m&[32m [32me[32mc[39mh[33mo[33m [33m"[33m$[33m{[33mU[33mB[33mU[33mN[33mT[33mU[33m_[33mC[33mO[33mD[33mE[33mN[33mA[33mM[33mE[36m:[36m-[36m$[36mV[36mE[36mR[36mS[36mI[36mO[36mN[36m_[36mC[36mO[36mD[36mE[36mN[36mA[39m[33mM[33mE[39m[35m}[39m[33m"[33m)[33m [33ms[33mt[33ma[33mb[33ml[39me[4m[32m"[4m[32m [4m[32m|[4m[32m [24m[39m[1B[79D[32ms[32mu[32md[39m[35C[33mr[39m[4m.[4ml[4mi[4ms[4mt[4m [4m>[4m [4m/[24md[4m[32me[4m[32mv[4m[32m/[4m[32mn[24m[39m[32mu[32ml[32ml[1B[39m[32ms[32mu[32md[39m[16C[?1l>[?2004l
+0% [Working]            Get:1 https://download.docker.com/linux/ubuntu noble InRelease [48.8 kB]
+0% [1 InRelease 15.9 kB/48.8 kB 32%] [Connecting to deb.gierens.de (82.165.23.185)] [Connecting to archive.ubun0% [Connecting to deb.gierens.de (82.165.23.185)] [Connecting to archive.ubuntu.com (185.125.190.82)] [Connecti0% [Connecting to deb.gierens.de (82.165.23.185)] [Connecting to archive.ubuntu.com (185.125.190.82)] [Connecti                                                                                                               Get:2 https://download.docker.com/linux/ubuntu noble/stable amd64 Packages [19.7 kB]
+0% [2 Packages 15.9 kB/19.7 kB 81%] [Connecting to deb.gierens.de (82.165.23.185)] [Connecting to archive.ubunt0% [Connecting to deb.gierens.de (82.165.23.185)] [Connecting to archive.ubuntu.com (185.125.190.82)] [Connecti0% [2 Packages store 0 B] [Connecting to deb.gierens.de (82.165.23.185)] [Connecting to archive.ubuntu.com (1850% [Connecting to deb.gierens.de (82.165.23.185)] [Waiting for headers] [Connecting to security.ubuntu.com (91.                                                                                                               Hit:3 http://archive.ubuntu.com/ubuntu noble InRelease
+                                                                                                               0% [Waiting for headers] [Waiting for headers]                                              Hit:4 http://deb.gierens.de stable InRelease
+0% [Waiting for headers] [Waiting for headers]0% [Waiting for headers] [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                              Hit:5 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+                                              0% [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                              Hit:6 http://security.ubuntu.com/ubuntu noble-security InRelease
+                                              0% [Waiting for headers]0% [Waiting for headers]                        Hit:7 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+                        0% [Working]100% [Working]              Fetched 68.5 kB in 1s (108 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 4%Reading package lists... 4%Reading package lists... 6%Reading package lists... 6%Reading package lists... 52%Reading package lists... 52%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 72%Reading package lists... 73%Reading package lists... 73%Reading package lists... 74%Reading package lists... 74%Reading package lists... 76%Reading package lists... 76%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m 
+[1;32m❯[0m [K[?1h=[?2004hsudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin[101D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32ma[32mp[32mt[32m-[32mg[32me[32mt[39m[89C[?1l>[?2004l
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  docker-ce-rootless-extras iptables libip4tc2 libip6tc2 libltdl7 libnetfilter-conntrack3 libnfnetlink0
+  libnftables1 libnftnl11 libslirp0 nftables pigz slirp4netns
+Suggested packages:
+  cgroupfs-mount | cgroup-lite firewalld
+The following NEW packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli docker-ce-rootless-extras docker-compose-plugin
+  iptables libip4tc2 libip6tc2 libltdl7 libnetfilter-conntrack3 libnfnetlink0 libnftables1 libnftnl11
+  libslirp0 nftables pigz slirp4netns
+0 upgraded, 18 newly installed, 0 to remove and 67 not upgraded.
+Need to get 121 MB of archives.
+After this operation, 442 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+0% [Working]            Get:1 https://download.docker.com/linux/ubuntu noble/stable amd64 containerd.io amd64 1.7.25-1 [29.6 MB]
+0% [Connecting to archive.ubuntu.com (91.189.91.81)] [1 containerd.io 15.9 kB/29.6 MB 0%]14% [Connecting to archive.ubuntu.com (91.189.91.82)] [1 containerd.io 21.1 MB/29.6 MB 71%]                                                                                           21% [Connecting to archive.ubuntu.com (91.189.91.83)]                                                     Get:2 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-buildx-plugin amd64 0.21.0-1~ubuntu.24.04~noble [35.3 MB]
+21% [Connecting to archive.ubuntu.com (91.189.91.83)] [2 docker-buildx-plugin 15.9 kB/35.3 MB 0%]                                                                                                 35% [Waiting for headers] [2 docker-buildx-plugin 21.9 MB/35.3 MB 62%]                                                                      45% [Waiting for headers] [Waiting for headers]                                               Get:3 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce-cli amd64 5:28.0.0-1~ubuntu.24.04~noble [15.7 MB]
+45% [Waiting for headers] [3 docker-ce-cli 28.1 kB/15.7 MB 0%]                                                              Get:4 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce amd64 5:28.0.0-1~ubuntu.24.04~noble [19.1 MB]
+                                                              57% [Waiting for headers] [4 docker-ce 20.0 kB/19.1 MB 0%]69% [Waiting for headers] [4 docker-ce 18.2 MB/19.1 MB 95%]                                                           Get:5 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce-rootless-extras amd64 5:28.0.0-1~ubuntu.24.04~noble [6,086 kB]
+70% [Waiting for headers] [5 docker-ce-rootless-extras 90.5 kB/6,086 kB 1%]                                                                           Get:6 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-compose-plugin amd64 2.33.0-1~ubuntu.24.04~noble [13.9 MB]
+                                                                           76% [Waiting for headers] [6 docker-compose-plugin 32.3 kB/13.9 MB 0%]                                                                      86% [Waiting for headers]86% [Waiting for headers]86% [Waiting for headers]86% [Waiting for headers]86% [Waiting for headers]                         Get:7 http://archive.ubuntu.com/ubuntu noble/universe amd64 pigz amd64 2.8-1 [65.6 kB]
+86% [7 pigz 1,157 B/65.6 kB 2%]                               87% [Working]87% [Waiting for headers]                                                                          18.9 MB/s 0s87% [Waiting for headers]                                                                          18.9 MB/s 0s87% [Waiting for headers]                                                                          18.9 MB/s 0s87% [Waiting for headers]                                                                          18.9 MB/s 0s                                                                                                               Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 libip4tc2 amd64 1.8.10-3ubuntu2 [23.3 kB]
+87% [8 libip4tc2 1,158 B/23.3 kB 5%]                                                               18.9 MB/s 0s88% [Working]                                                                                      18.9 MB/s 0s                                                                                                               Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 libip6tc2 amd64 1.8.10-3ubuntu2 [23.7 kB]
+88% [9 libip6tc2 1,158 B/23.7 kB 5%]                                                               18.9 MB/s 0s89% [Working]                                                                                      18.9 MB/s 0s                                                                                                               Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libnfnetlink0 amd64 1.0.2-2build1 [14.8 kB]
+89% [10 libnfnetlink0 1,158 B/14.8 kB 8%]                                                          18.9 MB/s 0s90% [Working]                                                                                      18.9 MB/s 0s                                                                                                               Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 libnetfilter-conntrack3 amd64 1.0.9-6build1 [45.2 kB]
+90% [11 libnetfilter-conntrack3 2,606 B/45.2 kB 6%]                                                18.9 MB/s 0s92% [Working]                                                                                      18.9 MB/s 0s                                                                                                               Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 libnftnl11 amd64 1.2.6-2build1 [66.0 kB]
+92% [12 libnftnl11 1,157 B/66.0 kB 2%]                                                             18.9 MB/s 0s93% [Working]                                                                                      18.9 MB/s 0s                                                                                                               Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 iptables amd64 1.8.10-3ubuntu2 [381 kB]
+93% [13 iptables 2,604 B/381 kB 1%]                                                                18.9 MB/s 0s94% [Waiting for headers]                                                                          18.9 MB/s 0s                                                                                                               Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 libnftables1 amd64 1.0.9-1build1 [358 kB]
+94% [14 libnftables1 1,156 B/358 kB 0%]                                                            18.9 MB/s 0s95% [Working]                                                                                      18.9 MB/s 0s                                                                                                               Get:15 http://archive.ubuntu.com/ubuntu noble/main amd64 nftables amd64 1.0.9-1build1 [69.8 kB]
+95% [15 nftables 1,157 B/69.8 kB 2%]                                                               18.9 MB/s 0s97% [Working]                                                                                      18.9 MB/s 0s                                                                                                               Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 libltdl7 amd64 2.4.7-7build1 [40.3 kB]
+97% [16 libltdl7 1,158 B/40.3 kB 3%]                                                               18.9 MB/s 0s98% [Waiting for headers]                                                                          18.9 MB/s 0s                                                                                                               Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 libslirp0 amd64 4.7.0-1ubuntu3 [63.8 kB]
+98% [17 libslirp0 5,502 B/63.8 kB 9%]                                                              18.9 MB/s 0s99% [Working]                                                                                      18.9 MB/s 0s                                                                                                               Get:18 http://archive.ubuntu.com/ubuntu noble/universe amd64 slirp4netns amd64 1.2.1-1build2 [34.9 kB]
+99% [18 slirp4netns 4,054 B/34.9 kB 12%]                                                           18.9 MB/s 0s100% [Working]                                                                                     18.9 MB/s 0s                                                                                                               Fetched 121 MB in 11s (11.3 MB/s)
+Selecting previously unselected package pigz.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 50242 files and directories currently installed.)
+Preparing to unpack .../00-pigz_2.8-1_amd64.deb ...
+Unpacking pigz (2.8-1) ...
+Selecting previously unselected package libip4tc2:amd64.
+Preparing to unpack .../01-libip4tc2_1.8.10-3ubuntu2_amd64.deb ...
+Unpacking libip4tc2:amd64 (1.8.10-3ubuntu2) ...
+Selecting previously unselected package libip6tc2:amd64.
+Preparing to unpack .../02-libip6tc2_1.8.10-3ubuntu2_amd64.deb ...
+Unpacking libip6tc2:amd64 (1.8.10-3ubuntu2) ...
+Selecting previously unselected package libnfnetlink0:amd64.
+Preparing to unpack .../03-libnfnetlink0_1.0.2-2build1_amd64.deb ...
+Unpacking libnfnetlink0:amd64 (1.0.2-2build1) ...
+Selecting previously unselected package libnetfilter-conntrack3:amd64.
+Preparing to unpack .../04-libnetfilter-conntrack3_1.0.9-6build1_amd64.deb ...
+Unpacking libnetfilter-conntrack3:amd64 (1.0.9-6build1) ...
+Selecting previously unselected package libnftnl11:amd64.
+Preparing to unpack .../05-libnftnl11_1.2.6-2build1_amd64.deb ...
+Unpacking libnftnl11:amd64 (1.2.6-2build1) ...
+Selecting previously unselected package iptables.
+Preparing to unpack .../06-iptables_1.8.10-3ubuntu2_amd64.deb ...
+Unpacking iptables (1.8.10-3ubuntu2) ...
+Selecting previously unselected package libnftables1:amd64.
+Preparing to unpack .../07-libnftables1_1.0.9-1build1_amd64.deb ...
+Unpacking libnftables1:amd64 (1.0.9-1build1) ...
+Selecting previously unselected package nftables.
+Preparing to unpack .../08-nftables_1.0.9-1build1_amd64.deb ...
+Unpacking nftables (1.0.9-1build1) ...
+Selecting previously unselected package containerd.io.
+Preparing to unpack .../09-containerd.io_1.7.25-1_amd64.deb ...
+Unpacking containerd.io (1.7.25-1) ...
+Selecting previously unselected package docker-buildx-plugin.
+Preparing to unpack .../10-docker-buildx-plugin_0.21.0-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-buildx-plugin (0.21.0-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../11-docker-ce-cli_5%3a28.0.0-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce-cli (5:28.0.0-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../12-docker-ce_5%3a28.0.0-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce (5:28.0.0-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../13-docker-ce-rootless-extras_5%3a28.0.0-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:28.0.0-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-compose-plugin.
+Preparing to unpack .../14-docker-compose-plugin_2.33.0-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-compose-plugin (2.33.0-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package libltdl7:amd64.
+Preparing to unpack .../15-libltdl7_2.4.7-7build1_amd64.deb ...
+Unpacking libltdl7:amd64 (2.4.7-7build1) ...
+Selecting previously unselected package libslirp0:amd64.
+Preparing to unpack .../16-libslirp0_4.7.0-1ubuntu3_amd64.deb ...
+Unpacking libslirp0:amd64 (4.7.0-1ubuntu3) ...
+Selecting previously unselected package slirp4netns.
+Preparing to unpack .../17-slirp4netns_1.2.1-1build2_amd64.deb ...
+Unpacking slirp4netns (1.2.1-1build2) ...
+Setting up libip4tc2:amd64 (1.8.10-3ubuntu2) ...
+Setting up libip6tc2:amd64 (1.8.10-3ubuntu2) ...
+Setting up libnftnl11:amd64 (1.2.6-2build1) ...
+Setting up docker-buildx-plugin (0.21.0-1~ubuntu.24.04~noble) ...
+Setting up containerd.io (1.7.25-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /usr/lib/systemd/system/containerd.service.
+Setting up docker-compose-plugin (2.33.0-1~ubuntu.24.04~noble) ...
+Setting up libltdl7:amd64 (2.4.7-7build1) ...
+Setting up docker-ce-cli (5:28.0.0-1~ubuntu.24.04~noble) ...
+Setting up libslirp0:amd64 (4.7.0-1ubuntu3) ...
+Setting up pigz (2.8-1) ...
+Setting up libnfnetlink0:amd64 (1.0.2-2build1) ...
+Setting up docker-ce-rootless-extras (5:28.0.0-1~ubuntu.24.04~noble) ...
+Setting up libnftables1:amd64 (1.0.9-1build1) ...
+Setting up nftables (1.0.9-1build1) ...
+Setting up slirp4netns (1.2.1-1build2) ...
+Setting up libnetfilter-conntrack3:amd64 (1.0.9-6build1) ...
+Setting up iptables (1.8.10-3ubuntu2) ...
+update-alternatives: using /usr/sbin/iptables-legacy to provide /usr/sbin/iptables (iptables) in auto mode
+update-alternatives: using /usr/sbin/ip6tables-legacy to provide /usr/sbin/ip6tables (ip6tables) in auto mode
+update-alternatives: using /usr/sbin/iptables-nft to provide /usr/sbin/iptables (iptables) in auto mode
+update-alternatives: using /usr/sbin/ip6tables-nft to provide /usr/sbin/ip6tables (ip6tables) in auto mode
+update-alternatives: using /usr/sbin/arptables-nft to provide /usr/sbin/arptables (arptables) in auto mode
+update-alternatives: using /usr/sbin/ebtables-nft to provide /usr/sbin/ebtables (ebtables) in auto mode
+Setting up docker-ce (5:28.0.0-1~ubuntu.24.04~noble) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /usr/lib/systemd/system/docker.socket.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m took [1;33m20s[0m 
+[1;32m❯[0m [K[?1h=[?2004hsudo docker run hello-world[27D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32md[32mo[32mc[32mk[32me[32mr[39m[16C[?1l>[?2004l
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+
+[1A[2Ke6590344b1a5: Pulling fs layer [1B[1A[2Ke6590344b1a5: Downloading [==============>                                    ]     720B/2.436kB[1B[1A[2Ke6590344b1a5: Downloading [==================================================>]  2.436kB/2.436kB[1B[1A[2Ke6590344b1a5: Verifying Checksum [1B[1A[2Ke6590344b1a5: Download complete [1B[1A[2Ke6590344b1a5: Extracting [==================================================>]  2.436kB/2.436kB[1B[1A[2Ke6590344b1a5: Extracting [==================================================>]  2.436kB/2.436kB[1B[1A[2Ke6590344b1a5: Pull complete [1BDigest: sha256:e0b569a5163a5e6be84e210a2587e7d447e08f87a0e90798363fa44a0464a1e8
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m took [1;33m5s[0m 
+[1;32m❯[0m [K[?1h=[?2004hsudo groupadd docker[20D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32mg[32mr[32mo[32mu[32mp[32ma[32md[32md[39m [4md[4mo[4mc[4mk[4me[4mr[24m[?1l>[?2004l[24md[24mo[24mc[24mk[24me[24mr
+groupadd: group 'docker' already exists
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m 
+[1;31m❯[0m [K[?1h=[?2004hgetent group docker[19D[32mg[32me[32mt[32me[32mn[32mt[39m[7C[4md[4mo[4mc[4mk[4me[4mr[24m[?1l>[?2004l[24md[24mo[24mc[24mk[24me[24mr
+docker:x:989:
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m 
+[1;32m❯[0m [K[?1h=[?2004hsudo usermod -aG docker $USER[29D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32mu[32ms[32me[32mr[32mm[32mo[32md[39m[17C[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m 
+[1;32m❯[0m [K[?1h=[?2004hsudo usermod -aG docker $USER[29D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32mu[32ms[32me[32mr[32mm[32mo[32md[39m[17C[29D[4m[32mg[4m[32me[4m[32mt[4m[32me[24m[39mn[32mt[32m [32mg[32mr[32mo[32mu[32mp[39m docker          [10D[19D[24m[32mg[24m[32me[24m[32mt[24m[32me[32mn[32mt[39m[39m [39mg[39mr[39mo[39mu[39mp [4md[4mo[4mc[4mk[4me[4mr[24m[?1l>[?2004l[24md[24mo[24mc[24mk[24me[24mr
+docker:x:989:suraj
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m 
+[1;32m❯[0m [K[?1h=[?2004hgroups[32mg[32mr[32mo[32mu[32mp[32ms[39m[?1l>[?2004l
+suraj adm dialout cdrom floppy sudo audio dip video plugdev users netdev
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m 
+[1;32m❯[0m [K[?1h=[?2004hdocker ps[9D[32md[32mo[32mc[32mk[32me[32mr[39m[3C[?1l>[?2004l
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/json": dial unix /var/run/docker.sock: connect: permission denied
+[1m[7m%[27m[1m[0m                                                                                                                [0m[27m[24m[J
+[1;36m~[0m 
+[1;31m❯[0m [K[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mcho \[39m
+[90m  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/li[90mn[90mux/ubuntu \[39m[K
+[90m  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \[39m[K
+[90m  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null[39m[K
+[90msudo apt-get update[39m[K[5A[16D[1m[31me[1m[31mx[0m[39m[39m [39m [39m [39m [1B[K[1B[K[1B[K[1B[K[1B[K[5A[4C[0m[32me[0m[32mx[39m[90mit[39m[32me[32mx[32mi[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[0m[32me[0m[32mx[0m[32mi[0m[32mt[39m[?1l>[?2004l[1B
+Script done on 2025-02-25 06:03:23+00:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-02-25 06:03:41+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[1m[7m%[27m[1m[0m                                                                                                                        [0m[27m[24m[J
+[1;36m~[0m 
+[1;32m❯[0m [K[?1h=[?2004hd[1m[31md[0m[39m[1m[31md[0m[39m[90mocker ps[39m[8D[1m[31md[1m[31mo[0m[39m[0m[33md[0m[33mo[39m[33md[33mo[33mc[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[39me[39mr[39m [39mp[39ms[9D[0m[32md[0m[32mo[0m[32mc[0m[32mk[32me[32mr[39m[3C[?1l>[?2004l
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1m[7m%[27m[1m[0m                                                                                                                        [0m[27m[24m[J
+[1;36m~[0m 
+[1;32m❯[0m [K[?1h=[?2004hd[1m[31md[0m[39m[1m[31md[0m[39m[90mocker ps[39m[8D[1m[31md[1m[31mo[0m[39m[0m[33md[0m[33mo[39m[33md[33mo[33mc[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[1m[31me[1m[31mr[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[0m[32mr[39m[32mr[32m [39m[32mr[39m[39m [39m-[39m -version[?1l>[?2004l
+Docker version 28.0.0, build f9ced58
+[1m[7m%[27m[1m[0m                                                                                                                        [0m[27m[24m[J
+[1;36m~[0m 
+[1;32m❯[0m [K[?1h=[?2004hdocker run hello-world[22D[32md[32mo[32mc[32mk[32me[32mr[39m[16C[?1l>[?2004l
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[1m[7m%[27m[1m[0m                                                                                                                        [0m[27m[24m[J
+[1;36m~[0m 
+[1;32m❯[0m [K[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mxit[39m[1m[31me[1m[31mx[0m[39m[0m[32me[0m[32mx[39m[32me[32mx[32mi[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[0m[32me[0m[32mx[0m[32mi[0m[32mt[39m[?1l>[?2004l
+
+Script done on 2025-02-25 06:05:33+00:00 [COMMAND_EXIT_CODE="0"]
