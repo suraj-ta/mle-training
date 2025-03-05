@@ -51,3 +51,33 @@ Tests are written for various steps of the process. You can check if all the tes
 ```bash
 pytest -v tests/
 ```
+
+# Running the mle_app Docker Container
+
+Run the following command to pull the latest image from DockerHub:
+
+``` bash
+docker pull surajta/mle_app:latest
+```
+
+Run Mlflow UI
+```bash
+mlflow server --host localhost --port 5000
+```
+
+Enter the Docker container interactively
+``` bash
+docker run --rm -it -p 5000:5000 -p 8000:8000 surajta/mle_app:latest /bin/bash
+```
+
+Activate the conda environment
+```bash
+conda activate mle-dev
+```
+
+Run the `main.py` file.
+```bash
+python3 src/nonstandardcode/main.py
+```
+
+Now, you can check the mlflow server running at `localhost:8000`
